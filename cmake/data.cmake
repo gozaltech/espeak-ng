@@ -1,3 +1,5 @@
+option(ENABLE_EMOJI_DICTIONARIES "Enable *_emoji dictionaries" OFF)
+
 list(APPEND _dict_compile_list
   af am an ar as az
   ba be bg bn bpy bs
@@ -131,7 +133,7 @@ foreach(_dict_name ${_dict_compile_list})
   elseif(EXISTS "${DICT_SRC_DIR}/${_dict_name}_listx")
     list(APPEND _dict_deps "${DICT_SRC_DIR}/${_dict_name}_listx")
   endif()
-  if(EXISTS "${DICT_SRC_DIR}/${_dict_name}_emoji")
+  if(ENABLE_EMOJI_DICTIONARIES AND EXISTS "${DICT_SRC_DIR}/${_dict_name}_emoji")
     list(APPEND _dict_deps "${DICT_SRC_DIR}/${_dict_name}_emoji")
   endif()
 
