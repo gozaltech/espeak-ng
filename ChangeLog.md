@@ -10,6 +10,7 @@ The espeak-ng project is a fork of the espeak project.
 ### 1.53.0
 
 new languages:
+*  pdc (Pennsylvania Dutch: Lancaster, Lehigh and Midwest) -- Josh Kennedy
 *  ps (Pashto) -- Hanif Rahman 
 *  rup (Aromanian) -- Andy Vladescu
 
